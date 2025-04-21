@@ -1,0 +1,461 @@
+-- Situation -1  
+-- We have hired two employees, Siddharth Gupta (email: siddharth.gupta@example.com, salary: ₹70,000, DOJ: 2024-01-01)
+ -- and Aarav Jain (email: aarav.jain@example.com, salary: 
+-- ₹72,000, DOJ: 2024-01-02), in the IT department (DepartmentID: 3). Add these records. 
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Siddharth','Gupta',3,70000,'2024-01-01','siddharth.gupta@example.com');
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Aarav','Jain',3,72000,'2024-01-02','aarav.jain@example.com');
+
+-- Situation -2 
+-- The Marketing department has been created (DepartmentID: 11) with a budget of ₹13,00,000, located in Pune, 
+-- and headed by Rakesh Mehta. Add this department. 
+INSERT INTO Departments (DepartmentName, Location, HeadOfDepartment, AnnualBudget) 
+VALUES  ('Marketing','Pune','Rakesh Mehta',1300000);
+
+-- Situation -3 
+-- three employees have been hired for the Marketing department (DepartmentID: 11): 
+-- Rahul Mehra (email: rahul.mehra@example.com, salary: ₹58,000, DOJ: 2024-01-10), 
+--  Sara Kapoor (email: sara.kapoor@example.com, salary: ₹62,000, DOJ: 2024-01-11), and
+-- Nitin Shah (email: nitin.shah@example.com, salary: ₹60,000, DOJ: 2024-01-12). Add these records. 
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Rahul','Mehra',11,58000,'2024-01-10','rahul.mehra@example.com'),
+('Sara','Kapoor',11,62000,'2024-01-11','sara.kapoor@example.com'),
+('Nitin','Shah',11,60000,'2024-01-12','nitin.shah@example.com');
+
+-- Situation -4 
+-- Two employees have been hired for the HR department (DepartmentID: 1): 
+-- Riya Sharma (email: riya.sharma@example.com, salary: ₹50,000, DOJ: 2024-02-01) and 
+-- Mohit Desai (email: mohit.desai@example.com, salary: ₹55,000, DOJ: 2024-02-02). Add these records. 
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Riya','Sharma',1,50000,'2024-02-01','riya.sharma@example.com'),
+('Mohit','Desai',1,55000,'2024-02-02','mohit.desai@example.com');
+
+
+
+-- Situation -5 
+-- Sneha Rao (email: sneha.rao@example.com) has joined the Finance department (DepartmentID: 2) on 2024-02-15 with a salary of ₹60,000. Add this record. 
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Sneha','Rao',2,60000,'2024-02-15','sneha.rao@example.com');
+
+-- Situation -6 
+-- Three employees have been hired for the Legal department (DepartmentID: 7): Aditya 
+-- Malhotra (email: aditya.malhotra@example.com, salary: ₹65,000, DOJ: 2024-03-01), Priyanka 
+-- Kapoor (email: priyanka.kapoor@example.com, salary: ₹67,000, DOJ: 2024-03-02), and
+ -- Kunal Singh (email: kunal.singh@example.com, salary: ₹68,000, DOJ: 2024-03-03). Add these records. 
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Aditya','Malhotra',7,65000,'2024-03-01','aditya.malhotra@example.com'),
+('Priyanka ','Kapoor',7,67000,'2024-03-02','priyanka.kapoor@example.com'),
+('Kunal','Singh',7,68000,'2024-03-03','kunal.singh@example.com');
+
+-- Situation -7 
+-- The Research department (DepartmentID: 12) has been created with a budget of 
+-- ₹20,00,000, located in Hyderabad, and headed by Dr. Meera Joshi. Add this department. 
+INSERT INTO Departments (DepartmentName, Location, HeadOfDepartment, AnnualBudget) 
+VALUES  ('Research','Hyderabad','Meera Joshi',2000000);
+
+-- Situation -8 
+-- Two employees have been hired for the Research department (DepartmentID: 12): Arjun 
+-- Shah (email: arjun.shah@example.com, salary: ₹75,000, DOJ: 2024-04-01) and 
+-- Riya Patel (email: riya.patel@example.com, salary: ₹72,000, DOJ: 2024-04-02). Add these records. 
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Arjun','Shah',12,75000,'2024-04-01','arjun.shah@example.com'),
+('Riya ','Patel',12,72000,'2024-04-02','riya.patel@example.com');
+
+-- Situation -9 
+-- The Logistics department (DepartmentID: 13) has been created with a budget of ₹9,00,000, located in Chennai, and headed by Ravi Verma. Add this department. 
+INSERT INTO Departments (DepartmentName, Location, HeadOfDepartment, AnnualBudget) 
+VALUES  ('Logistics','Chennai','Ravi Verma',900000);
+ 
+-- Situation -10 
+-- Two employees have been hired for the Logistics department (DepartmentID: 13): Kavita 
+-- Desai (email: kavita.desai@example.com, salary: ₹50,000, DOJ: 2024-05-01) and
+-- Amit Jain (email: amit.jain@example.com, salary: ₹52,000, DOJ: 2024-05-02). Add these records. 
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary, DateOfJoining, Email) 
+VALUES ('Kavita','Desai',13,50000,'2024-05-01','kavita.desai@example.com'),
+('Amit ','Jain',13,52000,'2024-05-02','amit.jain@example.com');
+
+
+-- 2] Situational Questions on WHERE Clause 
+-- Employee Table 
+-- Situation -1 We are planning a cybersecurity project. Find all employees working in the IT department (DepartmentID: 3). 
+SELECT * FROM Employees
+WHERE DepartmentID = 3;
+
+-- Situation -2 To organize a corporate event, we need employees who joined after 2024-01-01. Retrieve their details. 
+SELECT * FROM Employees
+WHERE DateOfJoining >'2024-01-01';
+
+-- Situation -3 The finance team is preparing budgets. List all employees whose salary is greater than ₹60,000. 
+SELECT * FROM Employees
+WHERE Salary > 60000;
+
+-- Situation -4 We are sending a company-wide newsletter. Find the details of employees whose email ends with '@example.com'. 
+SELECT * FROM Employees
+WHERE Email like '%@example.com';
+
+-- Situation -5 The Marketing department is launching a new campaign and needs a cost-effective team.
+--  Retrieve the details of employees in the Marketing department (DepartmentID: 11) who earn less than ₹60,000.
+SELECT * FROM Employees
+WHERE  DepartmentID = 11 AND Salary <60000;
+
+-- Situation -6 A client requires a project lead for their team. Find the employee details where the name starts with 'S'. 
+SELECT * FROM Employees
+WHERE FirstName like'S%';
+
+-- Situation -7 For recruitment analysis, retrieve all employees who joined in February 2024. 
+SELECT * FROM Employees
+WHERE DateOfJoining between '2024-02-01'and '2024-02-28';
+
+-- Situation -8 To shortlist mid-level employees, find the details of employees who are earning between ₹50,000 and ₹70,000. 
+SELECT * FROM Employees
+WHERE salary between 50000 and 70000;
+
+-- Situation -9 We need to identify senior employees. Retrieve the details of employees who joined before 2024-03-01 and earn more than ₹55,000. 
+SELECT * FROM Employees
+WHERE DateOfJoining <'2024-03-01' and salary > 55000;
+
+-- Situation -10 A special campaign is being planned for team leaders. Find employees who have "Manager" in their name. 
+SELECT * FROM Employees
+WHERE FirstName like'%Manager%'or LastName like '%Manager%';
+
+-- Department Table 
+-- Situation -11 To identify local opportunities, list all the departments located in Pune. 
+SELECT DepartmentName, Location FROM Departments
+WHERE location = 'pune';
+
+-- Situation -12 The board is interested in high-budget projects. Find the details of departments where the budget exceeds ₹10,00,000.
+SELECT * FROM Departments
+WHERE  AnnualBudget > 1000000;
+
+-- Situation -13 For a leadership meeting, retrieve the departments headed by "Rakesh Mehta". 
+SELECT * FROM Departments
+WHERE HeadOfDepartment ="Rakesh Mehta";
+
+-- Situation -14 Marketing expansion is being planned. Find all departments whose names start with "M". 
+SELECT * FROM Departments
+WHERE DepartmentName like 'M%';
+
+-- Situation -15 To allocate funds efficiently, list all departments where the budget is between ₹8,00,000 and ₹15,00,000. 
+SELECT * FROM Departments
+WHERE AnnualBudget between 800000 and 1500000;
+
+-- 3] Situational Questions on GROUP BY Clause 
+-- Employee Table 
+-- Situation -1: To analyze salary distribution, find the total salary paid in each department. 
+ select d.DepartmentName,sum(e.salary)as Total_salary from Employees as e
+ join departments as d
+ on e.DepartmentID = d.DepartmentID
+ group by d.DepartmentName
+ order by Total_salary;
+
+-- Situation -2: For employee retention analysis, count the number of employees in each department. 
+ select d.DepartmentName,count(e.FirstName) as Number_Of_Employees from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ group by d.DepartmentName
+order by Number_Of_Employees;
+
+-- Situation -3: The finance team wants to understand salary variation. Find the average salary in each department. 
+  select d.DepartmentName,avg(e.salary) as Avg_of_Salary from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ group by d.DepartmentName
+ order by Avg_of_Salary;
+ 
+-- Situation -4: To reward experienced employees, identify the earliest joining date in each department. 
+ select d.DepartmentName,min(DateOfJoining) as Earliest_joining from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ group by d.DepartmentName
+ order by Earliest_joining;
+ 
+-- Situation -5: The HR team is preparing performance reports. Retrieve the maximum salary in each department. 
+ select d.DepartmentName,max(e.salary) as Max_Salary from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ group by d.DepartmentName
+ order by Max_Salary;
+ 
+-- Situation -6: To analyze junior-level hiring, find the minimum salary in each department. 
+ select d.DepartmentName,min(e.salary) as Min_Salary from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ group by d.DepartmentName
+ order by Min_Salary;
+ 
+-- Situation -7: The finance team wants to review high-salary employees. Find the total salary paid for employees earning more than ₹60,000 in each department. 
+ select d.DepartmentName,sum(e.salary) as Total_Salary from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ group by d.DepartmentName
+ having Total_Salary > 60000
+ order by Total_Salary;
+ 
+-- Situation -8: To monitor departmental growth, count the number of employees who joined in 2024 in each department. 
+ select d.DepartmentName,count(EmployeeID) as No_Of_Employees from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ where year (DateOfJoining) = '2024'
+ group by d.DepartmentName;
+
+ 
+-- Situation -9: For training allocation, count the number of employees with salaries between ₹50,000 and ₹70,000 in each department. 
+  select d.DepartmentName,count(EmployeeID) as No_Of_Employees from departments as d
+ join  Employees as e
+ on e.DepartmentID = d.DepartmentID
+ where salary between 50000 and 70000
+ group by d.DepartmentName;
+ 
+-- Situation -10: For diversity analysis, count the number of employees whose names start with each letter of the alphabet. 
+Select substring(firstname,1,1)as firstletter,count(employeeid)as employeecount from employees 
+group by substring(firstname,1,1);
+
+-- Department Table 
+-- Situation -11: For city-based analysis, count the number of departments located in each city. 
+ select location,count(DepartmentName) from departments
+ group by location;
+ 
+-- Situation -12: To manage high-budget projects, find the total budget allocated to all departments in each city.
+ 
+ select location ,sum(AnnualBudget) as Total_budget from departments
+ group by location;
+ 
+-- Situation -13: For leadership tracking, count the number of departments headed by each manager. 
+select HeadOfDepartment, count(DepartmentName) as No_of_departments from departments
+group by HeadOfDepartment;
+
+-- Situation -14: To plan budget allocation, calculate the average budget of departments in each city. 
+ select location, avg(AnnualBudget) from departments
+ group by location;
+ 
+-- Situation -15: For funding efficiency, find the maximum and minimum budgets among departments in each city. 
+select location,max(AnnualBudget),min(AnnualBudget) from departments 
+group by location;
+
+-- 4] Situational Questions on CONCAT and Concatenating Words 
+-- Situation -1: To create a full name column, concatenate the first name and last name of each employee. 
+ select concat(firstname,' ',lastname) as full_name  from employees;
+ 
+-- Situation -2: For a project report, concatenate the department name and its location to display a complete department address. 
+ select concat(DepartmentName,' ',Location) as department_address from departments;
+ 
+-- Situation -3: To prepare a personalized email greeting, concatenate "Hello " with the employee's name and a comma. 
+ select concat('Hello, ',firstname,' ',lastname) from employees;
+ 
+-- Situation -4: For creating a unique employee ID, concatenate the department ID and employee number. 
+ select concat(EmployeeID,' ',DepartmentID)from employees;
+ 
+-- Situation -5: For creating a company contact list, concatenate the employee's phone number with their extension (if applicable). 
+ 
+-- Situation -6: To display the complete address, concatenate the street, city, and postal code of each employee. 
+ 
+-- Situation -7: To create an employee login ID, concatenate the employee’s first name, last name, and their department ID. 
+ select concat(firstname,' ',lastname,' ',DepartmentID)as employee_login_ID from employees;
+ 
+-- Situation -8: For sending out a personalized notification, concatenate the employee's department with their position. 
+ select concat(e.firstname,' ',e.lastname,' ',d.DepartmentName) from employees as e
+ join departments as d
+ on d.DepartmentID = e.DepartmentID;
+ 
+-- Situation -9: To display the employee's work status, concatenate their job title and current project. 
+ 
+-- Situation -10: For an annual report, concatenate the year and employee’s first name to create a unique report reference code. 
+ 	 select concat(FirstName ,year(DateOfJoining ))as unique_id from employees;
+
+-- 5] Situational Questions on the UPDATE Clause 
+-- Situation -1: As part of an organizational review, we need to update the salary of all employees who are part of the IT department (DepartmentID: 3).
+ -- The salary of all employees in this department should be increased by 10%. Make sure that the increase is applied to every employee within the department. 
+ update employees 
+ set salary = (salary*10/100+salary)
+ where DepartmentID = 3;
+ 
+ select * from employees
+ where departmentid = 3
+ order by salary;
+ 
+-- Situation -2: After the recent promotion evaluation, it has been decided that the employee with EmployeeID 101 should be promoted to a "Senior Developer" role.
+ -- Update their job title accordingly and make sure the position is reflected correctly in the employee records. 
+
+-- Situation -3: The HR team has informed us of a change in the contact information of employee with EmployeeID 120. 
+-- The new contact number for this employee should be updated to "9876543210". Ensure that the correct phone number is reflected in the system for any future communications. 
+ 
+-- Situation -4: The company has recently implemented a new email domain. All employees who joined after January 1, 2023, 
+-- need their email addresses updated to reflect the new domain "@newcompany.com". Update the email addresses accordingly for all the affected employees. 
+ update employees
+ set email =  concat(substring_index(email, '@',1),'@newcompany.com')
+ where DateOfJoining >= '2023-01-01';
+ set sql_safe_updates=0;
+
+-- Situation -5: It has come to our attention that there was an error in the naming of the HR department.
+-- The department name for DepartmentID 5 needs to be updated from "HR" to "Human Resources" to reflect the company's official title. 
+-- Perform this update to ensure consistency across the records. 
+ update departments
+ set DepartmentName ='HR'
+ where DepartmentID = 5;
+ select * from departments;
+ 
+-- Situation -6: As part of a company-wide salary review process, all employees who are currently earning below ₹50,000 need to receive a salary increase of ₹5,000.
+-- This update should only affect employees with a salary below the threshold and should apply the increase uniformly to each of their records. 
+ update employees
+ set salary = (salary + 5000)
+ where salary < 50000;
+ select * from employees;
+ 
+-- Situation -7: The Marketing department has recently moved to a new office in a different city.
+ -- The location of the Marketing department (DepartmentID: 11) needs to be updated to reflect this change.
+ -- Please update the location to "Mumbai" in the department's records accordingly. 
+ update departments
+ set location = 'Mumbai'
+ where departmentid = 11;
+ 
+-- Situation -8: Update the Salary of EmployeeID 35 to ₹60,000 as part of their annual appraisal. 
+  update employees
+  set salary = 60000
+  where EmployeeID = 35;
+  
+-- Situation -9: EmployeeID 110, who was previously working on a different project,
+-- has now been assigned to "Project Alpha" after the successful completion of their prior assignment. 
+ -- Please update the project assignment for this employee to reflect this new responsibility. 
+ 
+-- Situation -10: The employee with EmployeeID 10 had a delayed start date due to personal reasons.
+-- We need to update their joining date to the correct date, which is 2024-03-15,
+-- to ensure the records accurately reflect the employee's actual start date with the company. 
+ update employees 
+ set DateOfJoining ='2024-03-15'
+ where EmployeeID ='10';
+	
+
+-- 6] Situational Questions on the DELETE Clause 
+-- Situation -1: Due to an employee leaving the company, we need to delete the record of EmployeeID 101 from the Employee table. 
+ delete from employees
+ where  EmployeeID = 10;
+ 
+-- Situation -2: The company is undergoing a restructuring. As part of this process, 
+-- we need to delete all employees in the HR department (DepartmentID: 2) who joined before 2022. 
+delete from employees
+where DepartmentID = 2 and year(DateOfJoining) < '2022';
+ 
+-- Situation -3: We are cleaning up the database and need to delete employees with a salary lower than ₹30,000, as they are no longer part of the workforce. 
+ delete from employees
+ where salary < 30000;
+ set sql_safe_updates = 0;
+ 
+-- Situation -4: As per a recent audit, employees who joined before 2020 but no longer have any active projects should be removed from the system.
+-- Delete these employee records. 
+ delete from employees
+ where year(DateOfJoining) <'2020';
+ 
+-- Situation -5: After the closure of "Project Beta", we need to delete all records of 
+-- employees who were working on this project (assumed to be recorded in ProjectName). 
+
+-- Situation -6: An employee, EmployeeID 13, was added mistakenly and is no longer part of the organization. 
+-- Please delete their record from the Employee table. 
+ delete from employees
+ where EmployeeID = 13;
+ 
+-- Situation -7: The Marketing department (DepartmentID: 3) has undergone significant layoffs. 
+-- Delete all records of employees who worked in the Marketing department and joined before 2021. 
+delete from employees
+where DepartmentID = 3 and year(DateOfJoining)<'2021'; 
+
+-- Situation -8: As part of a data privacy initiative, we need to delete records
+-- of employees who have not provided their email addresses or contact numbers. 
+ delete from employees
+ where Email = null ;
+ 
+-- Situation -9: We need to remove all employees whose salary is above ₹1,00,000 
+-- but were part of a temporary contract that has now expired. Delete these employee records. 
+ delete from employees
+ where salary > 100000 ;
+ 
+-- Situation -10: The company has decided to shut down operations in certain regions. Delete the employee records of those 
+-- who were hired in the "North" region (assuming a Region column exists), and whose employment ended before 2023. 
+
+-- 7] Situational Questions on Table Schema Modifications (with Retrieval for Data Consistency) 
+-- Situation -1: Due to a change in company policy, we need to rename the Employee table to Staff. 
+-- Please perform the necessary operation to rename the table. 
+-- Note: Please do retrieve the changes made for consistency of the data. 
+-- If you are changing the name of the table, make sure to restore it to the original state as Employee if needed. 
+alter table employees
+rename to Staff;
+  alter table Staff
+  rename to employees;
+  
+-- Situation -2: As the company has decided to start tracking employees' marital status, add a new column MaritalStatus
+-- of type VARCHAR(20) to the Employee table. 
+-- Note: Please do retrieve the changes made for consistency of the data and ensure the data remains accurate for all future entries. 
+  alter table employees
+  add column MaritalStatus varchar(20);
+  
+  alter table employees
+  drop column MaritalStatus;
+  
+-- Situation -3: The company has decided to store the employees' date of birth. Add a DateOfBirth column of type DATE to the Employee table. 
+-- Note: Please ensure to retrieve the changes made to check the column's impact on future data consistency. 
+ alter table employees
+ add column DateOfBirth date ;
+ 
+alter table employees 
+drop column DateOfBirth;
+
+-- Situation -4: We need to change the data type of the Salary column in the Employee table from INT to DECIMAL(10,2)
+--  to accommodate fractional salary amounts. 
+-- Note: Please do retrieve the changes made for consistency of the data, ensuring that all existing salary data is preserved accurately. 
+  alter table employees
+  modify column salary decimal(10,2);
+  
+  alter table employees
+  modify column salary Int ;
+  
+-- Situation -5: To better categorize employees, we need to add a new column EmployeeCategory in the Employee table. 
+-- The column should accept values like "Full-time", "Part-time", or "Contract". 
+-- Note: Please ensure the changes are reflected and retrieve the updated schema for consistency. 
+  alter table employees
+  add column EmployeeCategory varchar(50);
+  
+  alter table employees
+  drop column EmployeeCategory;
+  
+-- Situation -6: The company wants to keep track of the department name for employees. 
+-- Therefore, a column DepartmentName should be added to the Employee table. 
+-- Note: After making the change, please retrieve the updates to ensure the column is populated correctly for future entries. 
+  alter table employees
+  add column DepartmentName varchar(50);
+  
+  alter table employees 
+  drop column DepartmentName;
+  
+-- Situation -7: We need to set the default value of the Status column in the Employee table to "Active" for any new employee added to the database. 
+-- Note: After applying this change, please retrieve the changes and verify that all new employee records default to "Active". 
+  alter table employees
+  add column Status varchar (50) default 'Active';
+  
+-- Situation -8: As part of a company-wide restructuring, the DepartmentID column in the Employee table 
+-- should be renamed to TeamID to reflect the new team-based structure. 
+-- Note: Please retrieve the changes made for consistency of the data. If necessary, restore the column name back to DepartmentID for future references. 
+  alter table employees
+  rename column DepartmentID to TeamID ;
+  
+  alter table employees 
+  rename column TeamID to DepartmentID;
+  
+-- Situation -9: The company has decided to archive old employee data, so the Employee table needs to be partitioned by JoinDate
+--  in order to keep the data for employees who joined before 2020 separate. 
+-- Note: After partitioning the data, ensure to retrieve the changes and check the data consistency and accessibility for employees prior to 2020. 
+  
+-- Situation -10: We need to create a foreign key constraint between the Employee table and the Department table to ensure the 
+-- integrity of the department data linked to each employee. Note: Please retrieve the changes made to verify the foreign key relationship,
+ -- ensuring data integrity and consistency across both tables. 
+ alter table employees
+ add constraint foreign_key
+foreign key (DepartmentID) 
+references departments (DepartmentID);
+ 
